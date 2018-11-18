@@ -7,8 +7,8 @@
 using namespace std;
 
 int main() {
-	system("cat /proc/cpuinfo | head -5 | cat > file.txt");
-	system("cat /proc/cpuinfo | grep -m 2 MHz | cat >> file.txt");
+	system("cat /proc/cpuinfo |cat > file.txt");
+	//system("cat /proc/cpuinfo | grep -m 2 MHz | cat >> file.txt");
 	
 	ifstream obj("file.txt");
 	
